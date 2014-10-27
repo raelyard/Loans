@@ -2,10 +2,9 @@ using Autofac;
 using NServiceBus;
 using NServiceBus.Features;
 
-namespace Processor
+namespace MediaLoanLIbrary.Loans.Processor
 {
     [EndpointName("Loans")]
-
     public class EndpointConfig : IConfigureThisEndpoint, AsA_Server, INeedInitialization
     {
         public void Customize(BusConfiguration configuration)
